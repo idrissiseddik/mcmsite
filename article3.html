@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Complet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .sponsor-slider {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    .content {
+      margin-top: 150px; /* Marge pour compenser le slider */
+      padding-bottom: 150px; /* Marge pour compenser le footer */
+    }
+    .article-title {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .article-image {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    .article-content {
+      margin-top: 20px;
+      line-height: 1.8;
+      font-size: 16px;
+      text-align: justify;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+    footer p {
+      margin: 5px 0 0 0;
+      font-size: 14px; /* Taille de police réduite */
+      
+    }
+    .btn-back {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slider des sponsors -->
+  <div id="sponsorCarousel" class="carousel slide sponsor-slider" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/imgsponsor1.png" class="d-block w-100" alt="Sponsor 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/imgsponsor2.jpg" class="d-block w-100" alt="Sponsor 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/imgsponsor3.jpg" class="d-block w-100" alt="Sponsor 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/imgsponsor4.jpg" class="d-block w-100" alt="Sponsor 4">
+      </div>
+    </div>
+  </div>
+
+  <!-- Section de l'article -->
+  <div class="content container">
+    <h1 class="article-title">Titre de l'Article</h1>
+    <img src="images/article1.jpg" alt="Image de l'article" class="article-image">
+    <div class="article-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis, velit at tincidunt vehicula, eros dolor suscipit nulla, id pharetra mauris justo vel augue. Integer dictum justo nec ex vulputate, quis gravida est vulputate. Etiam vehicula ligula vel nisi eleifend, at mollis augue volutpat. Nulla facilisi. Sed tempor orci eget velit sagittis, vel dignissim ligula convallis. Duis tempus orci a lacus sollicitudin tempus. Cras aliquam metus eget justo suscipit, a ultrices sapien blandit.</p>
+      <p>Curabitur ornare nisl eget dolor gravida gravida. Pellentesque convallis ligula vel metus cursus, non fermentum lacus vehicula. Aliquam erat volutpat. Ut mollis metus sit amet enim bibendum, nec consequat velit scelerisque. Vestibulum non ligula metus. In ornare sapien sit amet odio posuere bibendum. Etiam id volutpat nulla, ac tincidunt mi. Phasellus non bibendum ligula. Ut ut fringilla erat. Mauris consequat mi sit amet arcu dapibus tristique. Integer tincidunt augue in ipsum vestibulum, vel scelerisque sem eleifend. Aliquam interdum elit ligula, vel feugiat libero volutpat vel.</p>
+      <p>Phasellus accumsan metus non arcu sodales, vel suscipit enim ornare. Cras eu venenatis felis. In hac habitasse platea dictumst. Vivamus vel nisl dictum, efficitur nunc et, accumsan mi. Ut eu tincidunt nisi. Suspendisse euismod pretium metus, id euismod urna pellentesque ut. Praesent ultrices elit in mauris pretium, a dapibus libero suscipit. Nam fermentum sapien ac orci facilisis aliquet.</p>
+      <p>Donec non metus auctor, gravida turpis sit amet, pharetra purus. Nullam rhoncus leo at neque blandit, quis egestas magna hendrerit. Morbi tristique, magna id dapibus vehicula, ipsum nunc efficitur urna, at vestibulum purus urna a metus. Fusce a accumsan felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc vehicula ligula vitae lectus fermentum, sed pulvinar ligula suscipit. Fusce in mollis elit.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="actualites.html" class="btn-back">Retour aux actualités</a>
+    <p>&copy; 2025 Mouloudia Club de Marrakech. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
