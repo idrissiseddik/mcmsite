@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Mouloudia Club de Marrakech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .sponsor-slider {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      height: 150px;
+      overflow: hidden;
+    }
+
+    .content {
+      margin-top: 180px;
+      margin-bottom: 100px;
+    }
+
+    .content h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #28a745;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .content img {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 150px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .contact-form textarea {
+      height: 200px;
+    }
+
+    .contact-form button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #218838;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 20px;
+      color: #28a745;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #218838;
+    }
+
+    .btn-home {
+      display: inline-block;
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .btn-home:hover {
+      background-color: #218838;
+    }
+
+    footer p {
+      margin: 5px 0 0 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slider des sponsors -->
+  <div id="sponsorCarousel" class="carousel slide sponsor-slider" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/imgsponsor1.png" class="d-block w-100" alt="Sponsor 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/imgsponsor2.jpg" class="d-block w-100" alt="Sponsor 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/imgsponsor3.jpg" class="d-block w-100" alt="Sponsor 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/imgsponsor4.jpg" class="d-block w-100" alt="Sponsor 4">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenu principal -->
+  <div class="content">
+    <div class="container">
+      <!-- Logo -->
+      <img src="images/mcm.png" alt="Logo Mouloudia Club de Marrakech">
+      <h2>Contactez-nous</h2>
+      <p>
+        Vous avez des questions ou souhaitez en savoir plus sur notre club, nos événements, ou nos partenariats ? N'hésitez pas à nous contacter. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
+      </p>
+
+      <!-- Formulaire de contact -->
+      <div class="contact-form">
+        <form action="https://wa.me/212608975435?text=" method="get" target="_blank">
+          <input type="text" name="name" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+          <input type="text" name="subject" placeholder="Objet" required>
+          <textarea name="message" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer le message via WhatsApp</button>
+        </form>
+      </div>
+
+      <!-- Informations de contact -->
+      <div class="contact-info">
+        <p><strong>Adresse :</strong> Avenue Mohamed VI, Marrakech</p><br>
+        <p><strong>Téléphone :</strong> +212 608 975 435</p><br>
+        <div class="social-links">
+          <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" title="Twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer avec bouton de retour -->
+  <footer>
+    <a href="index.html" class="btn-back">Retour à l'accueil</a>
+    <p>&copy; 2025 Mouloudia Club de Marrakech. Tous droits réservés.</p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

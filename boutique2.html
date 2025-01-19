@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique - Mouloudia Club de Marrakech</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Style du slider des sponsors */
+    .sponsor-slider {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      height: 150px; /* Hauteur fixe du slider */
+      overflow: hidden; /* Empêche le contenu de dépasser */
+    }
+
+    /* Déplacer le contenu de la page vers le bas pour éviter la superposition */
+    .gallery {
+      margin-top: 180px; /* Ajuster la marge pour faire de la place au slider */
+      margin-bottom: 100px; /* Marge entre le contenu et le footer */
+    }
+
+    .gallery-title {
+      text-align: center;
+      margin-top: 180px; /* Ajuster pour qu'il n'y ait pas de chevauchement avec le slider */
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    .category-title {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    /* Ajout d'une bordure autour des cartes de produit */
+    .product-card {
+      margin-bottom: 30px;
+      text-align: center;
+      border: 2px solid #28a745; /* Bordure verte autour de la carte */
+      border-radius: 8px; /* Coins arrondis */
+      padding: 15px; /* Espace intérieur pour ne pas toucher les bords */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour un effet de profondeur */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    /* Effet au survol */
+    .product-card:hover {
+      transform: translateY(-5px); /* Légère élévation au survol */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .product-card h5 {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .product-card p {
+      font-size: 16px;
+      color: #28a745;
+    }
+
+    .btn-buy {
+      margin-top: 15px;
+      background-color: #28a745;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .btn-return {
+      margin-top: 30px; /* Marge entre le titre et le bouton */
+      background-color: #17a2b8;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin: 5px 0 0 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slider des sponsors -->
+  <div id="sponsorCarousel" class="carousel slide sponsor-slider" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/imgsponsor1.png" class="d-block w-100" alt="Sponsor 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/imgsponsor2.jpg" class="d-block w-100" alt="Sponsor 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/imgsponsor3.jpg" class="d-block w-100" alt="Sponsor 3">
+      </div>
+      <div class="carousel-item">
+        <img src="images/imgsponsor4.jpg" class="d-block w-100" alt="Sponsor 4">
+      </div>
+    </div>
+  </div>
+
+  <!-- Titre de la boutique -->
+  <div class="gallery-title">
+      <!-- Logo -->
+      <img src="images/mcm.png" alt="Logo Mouloudia Club de Marrakech">
+    <h2>Bienvenue dans la boutique du Mouloudia Club de Marrakech</h2>
+  </div>
+
+  <!-- Catégories de produits -->
+  <div class="container gallery">
+
+    <!-- Catégorie T-shirts -->
+    <div class="category-title">T-shirts</div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="product-card">
+          <img src="products/tshirt1.jpg" alt="T-shirt 1">
+          <h5>T-shirt Mouloudia Marrakech</h5>
+          <p>Prix: 200 Dhs</p>
+          <a href="https://wa.me/212608975435?text=Je%20veux%20acheter%20le%20T-shirt%20Mouloudia%20Marrakech%20à%20200%20Dhs" class="btn-buy" target="_blank">Acheter</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="product-card">
+          <img src="products/tshirt2.jpg" alt="T-shirt 2">
+          <h5>T-shirt Mouloudia Marrakech</h5>
+          <p>Prix: 250 Dhs</p>
+          <a href="https://wa.me/212608975435?text=Je%20veux%20acheter%20le%20T-shirt%20Mouloudia%20Marrakech%20à%20250%20Dhs" class="btn-buy" target="_blank">Acheter</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="product-card">
+          <img src="products/tshirt3.jpg" alt="T-shirt 3">
+          <h5>T-shirt Mouloudia Marrakech</h5>
+          <p>Prix: 220 Dhs</p>
+          <a href="https://wa.me/212608975435?text=Je%20veux%20acheter%20le%20T-shirt%20Mouloudia%20Marrakech%20à%20220%20Dhs" class="btn-buy" target="_blank">Acheter</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catégorie Accessoires -->
+    <div class="category-title">Accessoires</div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="product-card">
+          <img src="products/accessory1.jpg" alt="Accessoire 1">
+          <h5>Casquette Mouloudia Marrakech</h5>
+          <p>Prix: 100 Dhs</p>
+          <a href="https://wa.me/212608975435?text=Je%20veux%20acheter%20la%20Casquette%20Mouloudia%20Marrakech%20à%20100%20Dhs" class="btn-buy" target="_blank">Acheter</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="product-card">
+          <img src="products/accessory2.jpg" alt="Accessoire 2">
+          <h5>Écharpe Mouloudia Marrakech</h5>
+          <p>Prix: 120 Dhs</p>
+          <a href="https://wa.me/212608975435?text=Je%20veux%20acheter%20l'Écharpe%20Mouloudia%20Marrakech%20à%20120%20Dhs" class="btn-buy" target="_blank">Acheter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer avec bouton de retour -->
+  <footer>
+    <a href="index.html" class="btn-back">Retour à l'accueil</a>
+    <p>&copy; 2025 Mouloudia Club de Marrakech. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
