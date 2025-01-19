@@ -151,16 +151,38 @@
         Vous avez des questions ou souhaitez en savoir plus sur notre club, nos événements, ou nos partenariats ? N'hésitez pas à nous contacter. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.
       </p>
 
-      <!-- Formulaire de contact -->
-      <div class="contact-form">
-        <form action="https://wa.me/212608975435?text=" method="get" target="_blank">
-          <input type="text" name="name" placeholder="Votre nom" required>
-          <input type="email" name="email" placeholder="Votre adresse e-mail" required>
-          <input type="text" name="subject" placeholder="Objet" required>
-          <textarea name="message" placeholder="Votre message" required></textarea>
-          <button type="submit">Envoyer le message via WhatsApp</button>
-        </form>
-      </div>
+<!-- Formulaire de contact -->
+<div class="contact-form">
+  <form id="contactForm">
+    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+    <input type="email" id="email" name="email" placeholder="Votre adresse e-mail" required>
+    <input type="text" id="subject" name="subject" placeholder="Objet" required>
+    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer le message via WhatsApp</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Récupérer les valeurs saisies
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+
+    // Créer le texte du message à envoyer
+    var messageText = `Nom: ${name}\nEmail: ${email}\nObjet: ${subject}\nMessage: ${message}`;
+
+    // Créer l'URL de WhatsApp
+    var whatsappUrl = `https://wa.me/212608975435?text=${encodeURIComponent(messageText)}`;
+
+    // Rediriger vers WhatsApp avec le message pré-rempli
+    window.open(whatsappUrl, '_blank');
+  });
+</script>
+
 
       <!-- Informations de contact -->
       <div class="contact-info">
